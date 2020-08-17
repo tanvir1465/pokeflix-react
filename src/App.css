@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+  background-color: #141414;
+  font-family: 'Open Sans', sans-serif;
+}
+.nav {
+  margin: 24px;
+}
+
+.nav_main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_logo {
+  display: block;
+  max-width:164px;
+  max-height:60px;
+  width: auto;
+  height: auto;
+}
+
+.nav_links {
+  color: #FFCB05;
+  font-weight: 600;
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.plain_link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.plain_link:hover {
+  color: #c2a328;
+}
+
+.pokemon {
+  padding: 24px;
+}
+
+.pokemon_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+}
+
+.pokemon_card {
+  background-color: #191919;
+  border-radius: 8px;
+  padding: .5rem;
+  transition: 0.33s;
+}
+
+.pokemon_card:hover {
+  transform: scale(1.1);
+}
+
+.pokemon_card_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pokemon_card_content span {
+  color: #c9c8c8;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.home_banner {
+  min-width: 100%;
+  height: 50vh;
+  background: url(../src/home.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.home_banner_text_container {
+  width: 35%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 48px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home_banner_text_container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .home_banner_text_container {
+    width: 75%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .home_banner_text_container {
+    width: 75%;
+    height: 90%;
+    text-align: center;
+  }
+}
+
+.home_banner_text_container h1 {
+  color: #f5f5f5;
+}
+
+.home_banner_text_container span {
+  color: #f5f5f5;
+}
